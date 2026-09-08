@@ -229,15 +229,17 @@ summary:focus-visible {
 .page-hero p { max-width: 38rem; color: rgba(250,246,239,0.75); }
 
 .stats {
-  display: grid;
-  gap: 1.5rem;
   background: var(--cream);
   border-bottom: 1px solid var(--line);
   padding: 2rem 0;
 }
+.stats .wrap {
+  display: grid;
+  gap: 1.5rem;
+}
 .stats strong { display: block; font-family: var(--display); font-size: 1.8rem; color: var(--burgundy); font-weight: 500; }
 .stats span { color: var(--muted); font-size: 0.9rem; }
-@media (min-width: 700px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 700px) { .stats .wrap { grid-template-columns: repeat(4, 1fr); } }
 
 .split { display: grid; gap: 2.5rem; align-items: center; }
 .split p { color: var(--muted); }
